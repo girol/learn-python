@@ -59,19 +59,19 @@ opcao = "s"
 while opcao == "s":
 
     A = ler_numero("André")
-    B = ler_numero("Bietro")
+    P = ler_numero("Pietro")
     C = ler_numero("Carlos")
 
-    if A == B == C:
+    if A == P == C:
         print ("X")
 
-    elif A != C == B:
+    elif A != C == P:
         print ("A")
 
-    elif A == C != B:
-        print ("B")
+    elif A == C != P:
+        print ("P")
 
-    elif A == B != C:
+    elif A == P != C:
         print ("C")
 
     op = input("Deseja executar novamente? s/n?")
