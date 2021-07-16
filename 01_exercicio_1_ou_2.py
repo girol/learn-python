@@ -74,4 +74,4 @@ while opcao == "s":
     elif A == P != C:
         print ("C")
 
-    op = input("Deseja executar novamente? s/n?")
+    opcao = input("Deseja executar novamente? s/n?")
