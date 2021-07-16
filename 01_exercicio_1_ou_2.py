@@ -43,26 +43,26 @@ A
 """
 
 
+def ler_numero(player):
+    jogadas_validas = [1, 2]
+    numero = int(input(f"{player} - Digite 1 ou 2: \n"))
 
-op = "s"
+    while numero not in jogadas_validas:
+        print(f"{player} - Opção incorreta!!!!")
+        print("\n Digite apenas 1 ou 2")
+        numero = int(input(f"{player} - Digite 1 ou 2: \n"))
 
-while op == "s":
+    return numero
 
 
-    A = int(input("Digite 1 ou 2: \n"))
-    B = int(input("Digite 1 ou 2: \n"))
-    C = int(input("Digite 1 ou 2: \n"))
+opcao = "s"
+while opcao == "s":
 
-    if A != 1 and A != 2:
-        print ("Digite apenas 1 ou 2")
+    A = ler_numero("André")
+    B = ler_numero("Bietro")
+    C = ler_numero("Carlos")
 
-    elif B != 1 and B != 2:
-        print ("Digite apenas 1 ou 2")
-
-    elif C != 1 and C != 2:
-        print ("Digite apenas 1 ou 2")
-
-    elif A == B == C:
+    if A == B == C:
         print ("X")
 
     elif A != C == B:
